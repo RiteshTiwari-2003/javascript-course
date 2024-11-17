@@ -85,6 +85,15 @@ console.log(c);
  * let a=10;
  * function x(){
  * var a=10;}so there is no any error because var is global scoped or functional scoped because then var a is not interfairing let a now
+ * block scope also follown the lexical scope
+ * 
+ * const a=20;{
+ * const a=30;{
+ * const a=40;
+ * console.log(a);a take value from nearest a like a =40}
+ * console.log(a);a take value from nearest a like a=30}when you put debugger on line 92 then you can see in scope there is two seperate seperate block scope  one for a=30, one for a=40 and one is script is script scope where const a 20 present and one scope is global scope
+ * 
+ * 
  * 
  * 
  * 
