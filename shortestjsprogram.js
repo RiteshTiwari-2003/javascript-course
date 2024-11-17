@@ -46,4 +46,9 @@ so undefined  like taking memory it is very different form not defined
 
 like if i write console.log(x); and if we run this code so we have not allocate the memory to x right so if you try to find x then you would not to find anything so 
 this is not defined 
+some people think undefined means empty but this is wrong undefined is a spacila keyword which takes up its own memeory 
+but you can assume it like a placeholder which is kept for the time being until the variable assign some other value, till that time it store that placeholder named as undefined
+
+
+javascript is the loosly typed language loosly typed means it does not attached the variable to the any specific data type
  */
