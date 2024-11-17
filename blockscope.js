@@ -72,6 +72,20 @@ console.log(c);
  * and like let const also perform same thing
  * so shadowing is not the only function of block its behave in function also
  * 
+ * ellligle shadowing
+ * let a=10;
+ * {
+ * var a=10;} this give a error syntex error: this is known as uncaught syntex error: because identifier a has been already declared, so it is called as elligal shadowing 
+ * but what if we vide versa can we shadow like this
+ * var a=10;
+ * {
+ * let a=20;}this is possible this code not give any error but why in line 78 give error because var is global scope but in global scope alreay a let a variable declared so give error
+ * so for solution you give line 78 var variable a boundry like a function 
+ * like
+ * let a=10;
+ * function x(){
+ * var a=10;}so there is no any error because var is global scoped or functional scoped because then var a is not interfairing let a now
+ * 
  * 
  * 
  * 
