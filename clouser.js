@@ -32,5 +32,43 @@ x();
 
  function bundled along with its lexical scope is called as closure
 
+ when you write code like this
+ function x(){
+ var a=7;
+ function y(){
+ console.log(a);}
+ a=100;
+ return y;}
+ var z=x();
+ console.log(z);
+ z();// it give output of 100
+ so the function along with reference of variable of lexical of parents return 
 
+
+ */
+function z(){
+    var b=900;
+    function x(){
+        var a=7;
+        function y(){
+            console.log(a,b);
+        }
+        y();
+    }
+    x();
+
+}
+z();
+/**so if you put debugger inside the function on 54 line and go in browser and see scope then there are many scope shown on the sscreen one is
+ * local
+ * this:window
+ * one scope is closure
+ * closure(x)
+ * a=7
+ * amd one more scope is 
+ * closure(z)
+ * b=900;
+ * and one ore scope is global in which various method and veriable present
+ * 
+ * 
  */
