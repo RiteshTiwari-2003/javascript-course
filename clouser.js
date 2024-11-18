@@ -17,4 +17,9 @@ x();
  * 
  *what is the closure ?
  a closure is the combinstion of the function bundled together (enclosed) with refeerence to its surrounding state(the lexical envoirment).
+ in other word, a closure gives you access to outer function's scope from an inner function.in javascript closure are created every time when function is created, at function creation time.
+ in line 7 instead of wirting this you can also write this return y;and check outside that what is function returning outside like this
+ let z=x();
+ console.log(z); // it give us the function y like this f y(){console.log(a);}
+
  */
