@@ -20,6 +20,17 @@ x();
  in other word, a closure gives you access to outer function's scope from an inner function.in javascript closure are created every time when function is created, at function creation time.
  in line 7 instead of wirting this you can also write this return y;and check outside that what is function returning outside like this
  let z=x();
- console.log(z); // it give us the function y like this f y(){console.log(a);}
+ console.log(z); // it give us the function y like this f y(){console.log(a);}, now when x return the y then x is gone now x execution context is no longer in the call stack 
+ it completely gone all the variable and everything is gone
+ but what will happen to this y now,so y function is return from x it no longer connected with x so what about y lexical scope,
+ so how it behave outside the scope or function, otside when call the functin z (z()),
+ so what will happen when you write z() , it willl try to find out a so when you want to print 
+ console.log(z()); then output come but why,
+ so function are so beautiful when it return from the other function, they still are maintain to remember lexical envoirment(scope),
+ so no longer y present inx but it remember its parent lexical scope,
+ so it means when you return function y then not only function body is return but whole closure world is return means function return whole function body along with lexical scope,
+
+ function bundled along with its lexical scope is called as closure
+
 
  */
