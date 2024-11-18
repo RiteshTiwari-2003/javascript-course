@@ -70,5 +70,14 @@ z();
  * b=900;
  * and one ore scope is global in which various method and veriable present
  * 
+ * use of closure:
+ * module design pattern 
+ * currying 
+ * function like oonce
+ * memoize
+ * maintaining state in async world
+ * setTimeouts
+ * iterators
+ * and many more
  * 
  */
