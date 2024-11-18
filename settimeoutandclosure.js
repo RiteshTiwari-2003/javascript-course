@@ -45,7 +45,7 @@ like this
 
 function x(){
     for(var i=1;i<=5;i++){
-    function close(i){
+    function close(i ){
     setTimeout(function (){
     console.log(i);},i*1000);}
     close(i);}
@@ -53,7 +53,47 @@ function x(){
 
 x();
 
+so the a function along with refernce to the outer envoirment (function) formed the closure , in other word,
+closure is the combination of the functions and its lexical scope bundled together forms a closure 
+
 
 
 
 */
+function outer(){
+    var a=10;
+    function inner(){
+        console.log(a);
+// so the function inner() along wwith its lexical outer invoirment is known as the closure 
+    }
+    return inner;
+}
+var close=outer()();
+//var close=outer();
+//close();
+/**closure also help in data hiding and encapssulation so how it is work 
+ * exapmle of data hidding using closure
+ * 
+ */
+var counter=0;
+function incrementCounter(){
+    counter++;
+}
+/**so put above above function inside a function 
+ * 
+ * function counter(){
+ * var count=0;
+ * function incrementCounter(){
+ * count++;}}
+ * console.log(count); // so here error come , a uncaught reference error, count is not defined 
+ * 
+ * but we can access using closure like return the inner function
+ * 
+ * function counter(){
+ * var count=0;
+ * return function incrementCounter(){
+ * count++;}}
+ * var counter1=counter();
+ * counter1();// output is 1
+ * counter1(); output is 2
+ */
