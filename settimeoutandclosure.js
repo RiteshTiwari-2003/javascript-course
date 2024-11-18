@@ -96,4 +96,25 @@ function incrementCounter(){
  * var counter1=counter();
  * counter1();// output is 1
  * counter1(); output is 2
+ * var counter2=counter();// it create new refernce of count variable and agsin all thing start with count=0;
+ * counter2();output is 1
+ */
+function Counter(){
+    var count=0;
+    this.incrementCounter=function (){
+        count++;
+        console.log(count);
+    }
+    this.decrementCounter=function (){
+        count--;
+        console.log(count);
+    }
+}
+var counter1=new Counter();
+counter1.incrementCounter();// output is 1
+/**what is the garbage collector in javascript and what it do
+ * garbage collector is like a program in the browser or in the javascript engine which kind of freeze up the and utilize the memory
+ * means the garbage collector in the javascript is the buildin mechanism that automatically manages the memory by reclaiming unused memory
+ * and freezing up the resources that are no longer in use. this help prevent memory leaks and ensure thst your application running efficiently without 
+ * requiring developers to manually allocate and deallocate memory.
  */
