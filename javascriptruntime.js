@@ -77,7 +77,15 @@
  * you know about call stack already now here is meemory heap here store all the memory
  * so memory heap is the component where whole variable and function assign memory
  * 
- * now we also have garbage collector in the picture 
+ * now we also have garbage collector in the picture , garbage collector connect with memory heap because chack in memory heap if any function or variable not in use keep thaqt variable inside it.
+ * garbage collector use mark and sweep algorithm
+ * 
+ * v8 javascroipt engine consiidered fastest among the all the javascript engine ever.
+ * v8 has the interpreter whciih is known as ignition so there is ignition interpreter and along with turbo fan, so turbo fan optimizing compiler which does the work of compilation.
+ * 
+ * v8 javascript engine architecture
+ * 
+ * 
  * 
  * 
  */
