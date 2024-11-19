@@ -53,4 +53,31 @@
  * and this is also one question rise from these part that javascripot is compilation language or interpreted language
  * 
  * 
+ * interpreter:
+ * interpreter takes your code and start running these code line by line,
+ * 
+ * compiler:
+ * in compiler languafge your whole code even compiling before execution , 
+ * 
+ * javascript can perform like interpreted language as well as sometime can perform like a compiled language,
+ * it all depend upon the javascript engine,
+ * so noww a days it complitely depend upon js engine that javascript code is purly interpreted or just in time compiled ,
+ * just in time compilsation use interpreter as well as compiler, 
+ * 
+ * so from first phase parsing phase ast come and goes to interpreter , now this interpreter convert the high level code into byte code and send it to the execution phase ,
+ * interpreter takes the help of compiler to optimized the code.
+ * the compiler talk with interpreter and along with code runnning line by line compiler also optimized the code as much it can.
+ * compiler optimized the code as much it optimize at the run time, because of this it call just in time compilation
+ * 
+ * some javascript engine follow algorihm ahead of time compilation in that case compiler take the peace of code that executing later and try to optimize it as much as it can 
+ * they also produce the byte code that goes to the execution phase later
+ * and execution here is not possible without two major thing in javascript 
+ * those two component are the memory heap and call stack
+ * 
+ * you know about call stack already now here is meemory heap here store all the memory
+ * so memory heap is the component where whole variable and function assign memory
+ * 
+ * now we also have garbage collector in the picture 
+ * 
+ * 
  */
