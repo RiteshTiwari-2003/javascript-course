@@ -87,3 +87,48 @@ const output8=arr3.reduce(function (max,curr){
 
 },0);
 console.log(output8);
+
+const user=[{
+    firstName:"Akshay",
+    lastName:"Kumar",
+    age:56
+},
+{
+    fistName:"Donald Trump",
+    lastName:"President",
+    age:76
+},
+{
+    firstName:"Ritesh",
+    lastName:"Tiwari",
+    age:22
+},
+{
+    firstName:"Deepika",
+    lastName:"Padukonne",
+    age:"56"
+}];
+const output9=user.map((x)=>x.firstName+" "+x.lastName);
+console.log(output8);
+const output10=user.reduce(function (acc,curr){
+    if(acc[curr.age]){
+        acc[curr.age]=++acc[curr.age];
+    }
+    else{
+        acc[curr.age]=1;
+    }
+    return acc;
+},{});
+console.log(output10);
+// so task is to print that person first name whose age are less than 30 like in this array this is [akshay, deepika]
+const output11=user.filter((x)=>{x.age<30}).map((x)=>x.firstName);
+console.log(output11);
+//can you print or display same output as above code printed using reduce function then it's answer is yes we can
+const output12=user.reduce(function(acc,curr){
+    if(curr.age<30){
+        acc.push(curr.firstName);
+    }
+    return acc;
+
+},[]);
+console.log(output12);
