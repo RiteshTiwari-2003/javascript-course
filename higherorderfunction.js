@@ -31,6 +31,7 @@ const calculate=function (radius,logic){
     return output;
 
 };
+console.log(radius.map(area));//line 34 and line 35 give same output
 console.log(calculate(radius,area));
 console.log(calculate(radius,circumference));
 console.log(calculate(radius,diameter));
@@ -61,5 +62,17 @@ const calculateDaimeter=function (radius){
 };
 console.log(calculateDaimeter(radius));
 /**but above inthese code main problem is we repeating code very much and in programmming all things want to follow dry priciple means dont repeadt yourself
+ * 
+ * lets try to calculate function like map function like radius.map() then we should use Array.prototype.calculate at the place of const calculate on line 26
+ * then after this we write on line 35 is console.log(radius.calculate(area));
+ * and then calculate function write like this
+ * const calculate=function (logic){
+    const output=[];
+    for(let i=0;i<this.length;i++){
+        output.push(logic(this[i]));
+    }
+    return output;
+
+};
  * 
  */
