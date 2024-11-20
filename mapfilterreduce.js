@@ -49,3 +49,32 @@ function greaterThan4(x){
 }
 const output6=arr1.filter(greaterThan4);
 console.log(output6);
+
+/**reduce function so just like name suggest reduce does not reduce any thing  */
+//sum and max
+const arr3=[5,1,3,5,6];
+function findSum(arr){
+    let sum=0;
+    for(let i=0;i<arr.length;i++){
+        sum=sum+arr[i];
+    }
+    return sum;
+}
+console.log(findSum(arr3));
+//so here we can use reduce function for iterating the all the element and give a single output
+const output7=arr3.reduce(function(acc,curr){
+    acc=acc+curr;
+    return acc;
+},0);
+console.log(output7);
+
+function findMax(arr){
+    let max=0;
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]>max){
+            max=arr[i];
+        }
+    }
+    return max;
+}
+console.log(findMax(arr3));
