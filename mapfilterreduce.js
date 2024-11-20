@@ -78,3 +78,12 @@ function findMax(arr){
     return max;
 }
 console.log(findMax(arr3));
+
+const output8=arr3.reduce(function (max,curr){
+    if(curr>max){
+        max=curr;
+    }
+    return max;
+
+},0);
+console.log(output8);
