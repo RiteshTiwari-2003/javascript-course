@@ -132,3 +132,13 @@ const output12=user.reduce(function(acc,curr){
 
 },[]);
 console.log(output12);
+
+/**the map function is often used in combination with other js methods, such as filter, reduce, and forEach ,to manipulate and transform 
+ * data into the array.
+ */
+const people=[{name:"alice",age:20},
+    {name:"bob",age:30},
+    {name:"charlie",age:40},
+];
+const names=people.filter(person=>person.age>=30).map(person=>person.name);
+console.log(names);
